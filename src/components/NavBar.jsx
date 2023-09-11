@@ -8,7 +8,7 @@ import { BiSolidUserCircle } from "react-icons/bi";
 
 export default function NavBar() {
   return (
-    <div className=" fixed bottom-0 left-0 w-full py-4 px-4 ">
+    <div className=" fixed bottom-0 left-0 w-full py-2 px-4 bg-[#eeeded] z-50 ">
       <div className=" flex justify-between items-center ">
         <Link to="/">
           <AiFillHome className="text-4xl" />
