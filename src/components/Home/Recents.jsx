@@ -9,12 +9,17 @@ export default function Recents() {
       </div>
       <div className="flex flex-col w-full gap-3 mt-3">
         <RecentCard
-          heading={"Failed prop type: Invalid prop `variant` of value "}
+          heading={"A repe case happend at Institute of Technology Guwahati!"}
           subHeading={
-            "Failed prop type: Invalid prop `variant` of value `p` supplied to `MaterialTailwind.Typography`, expected one of "
+            "On May 28, a student was arrested for allegedly drugging and raping a batchmate. The woman was brought to the hospital in an unconscious state."
           }
         />
-        <RecentCard />
+        <RecentCard
+          heading={"Physical assult near Barrackpore! "}
+          subHeading={
+            "I was physically assualted by my aunt. It was all of a sudden that I failed to react. It has left me with trauma. "
+          }
+        />
       </div>
     </div>
   );
