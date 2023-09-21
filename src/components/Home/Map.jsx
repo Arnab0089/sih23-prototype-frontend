@@ -32,7 +32,6 @@ export default function Map() {
       >
         <Marker1 scale={1.5} lat={22.572646} lng={88.363895} text="My Marker" />
       </GoogleMapReact>
-      <img width={{ width: "100px" }} src="/vite.svg" alt="" />
     </div>
   );
 }

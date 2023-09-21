@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { BiSolidMessageAdd } from "react-icons/bi";
 import { ImStatsDots } from "react-icons/im";
-import { FaRobot } from "react-icons/fa";
+import { FaHandsHoldingChild } from "react-icons/fa6";
 import { BiSolidUserCircle } from "react-icons/bi";
 
 export default function NavBar() {
@@ -20,7 +20,7 @@ export default function NavBar() {
           <ImStatsDots className="text-3xl" />
         </Link>
         <Link to="/assistant">
-          <FaRobot className="text-4xl" />
+          <FaHandsHoldingChild className="text-4xl" />
         </Link>
         <Link to="/profile">
           <BiSolidUserCircle className="text-4xl" />
