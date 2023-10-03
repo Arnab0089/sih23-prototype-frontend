@@ -11,11 +11,12 @@ export default function AchievementsSection() {
     <div className="achievements-section">
       <h2>Achievements</h2>
       <div className="badge-container">
-        {achievementsData.map((achievement) => (
-          <div key={achievement.id} className="badge">
-            {achievement.name}
-          </div>
-        ))}
+        {achievementsData &&
+          achievementsData.map((achievement) => (
+            <div key={achievement.id} className="badge">
+              {achievement.name}
+            </div>
+          ))}
       </div>
     </div>
   );
