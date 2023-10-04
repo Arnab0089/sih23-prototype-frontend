@@ -1,6 +1,7 @@
 import React from "react";
 import PlantBadge from "../../assets/plant-clipart-sample140313a.png";
 import { GoArrowRight } from "react-icons/go";
+import { Typography } from "@material-tailwind/react";
 
 const achievementsData = [
   { id: 1, name: "Achievement 1" },
@@ -28,7 +29,9 @@ export default function AchievementsSection() {
               alt="PlantedBadge"
               className="achive-pic rounded w-32 h-32 object-cover"
             />
-            {achievement.name}
+            <Typography variant="paragraph" className="text-center">
+              {achievement.name}
+            </Typography>
           </div>
         ))}
       </div>

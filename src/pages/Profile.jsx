@@ -7,7 +7,7 @@ import ProfilePicture from "../assets/MetaMe_Smiling.png";
 export default function Profile() {
   return (
     <Layout>
-      <div className="container mt-4">
+      <div className="container mt-4 mb-[4rem]">
         {/* Add the profile picture */}
         <div className="w-full p-4 bg-blue-gray-200 rounded-3xl flex flex-col justify-center items-center shadow-lg">
           <div className="w-fit">
