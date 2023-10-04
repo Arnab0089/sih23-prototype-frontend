@@ -8,7 +8,7 @@ import { BiUser } from "react-icons/bi";
 
 export default function NavBar() {
   return (
-    <div className=" fixed bottom-0 left-0 w-full py-3 px-4 bg-[#eeeded] z-50 ">
+    <div className=" fixed bottom-0 left-0 w-full py-3 px-4 bg-white z-50 ">
       <div className=" flex justify-between items-center ">
         <Link to="/">
           <GoHome className="text-3xl" />
