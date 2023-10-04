@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="py-3 px-3 bg-white shadow-lg flex justify-between items-center">
+      <div className="py-3 px-3 flex justify-between items-center">
         <Typography className="text-left" variant="h5" color="gray">
           {genHeading()}
         </Typography>
