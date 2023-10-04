@@ -1,10 +1,18 @@
 import React, { useCallback } from "react";
-import { Typography } from "@material-tailwind/react";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleTheme } from "../store";
+import { Typography, IconButton } from "@material-tailwind/react";
 import { useLocation } from "react-router-dom";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 export default function Header() {
   const location = useLocation();
+  const dispatch = useDispatch();
+
+  const { theme, colors } = useSelector((state) => state.theme);
+  console.log(theme);
+
   const genHeading = useCallback(() => {
     switch (location.pathname) {
       case "/":
@@ -24,11 +32,28 @@ export default function Header() {
 
   return (
     <>
-      <div className="py-3 px-3 flex justify-between items-center">
+      <div className="py-3 px-3 flex justify-between items-center" style={{ backgroundColor: colors.primary }}>
         <Typography className="text-left" variant="h5" color="gray">
           {genHeading()}
         </Typography>
-        <BsThreeDotsVertical className="text-xl" />
+        <div className="">
+          <IconButton variant="text" color="gray" ripple="light">
+            {theme === "light" ? (
+              <BsMoon
+                className="text-xl"
+                onClick={() => dispatch(toggleTheme())}
+              />
+            ) : (
+              <BsSun
+                className="text-2xl"
+                onClick={() => dispatch(toggleTheme())}
+              />
+            )}
+          </IconButton>
+          <IconButton variant="text" color="gray" ripple="light">
+            <BsThreeDotsVertical className="text-xl" />
+          </IconButton>
+        </div>
       </div>
     </>
   );
