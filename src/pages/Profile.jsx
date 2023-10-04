@@ -9,8 +9,8 @@ export default function Profile() {
     <Layout>
       <div className="container mt-4">
         {/* Add the profile picture */}
-        <div className="container w-full p-4 bg-blue-gray-200 rounded-3xl flex-col justify-center items-center shadow-lg">
-          <div className="">
+        <div className="w-full p-4 bg-blue-gray-200 rounded-3xl flex flex-col justify-center items-center shadow-lg">
+          <div className="w-fit">
             <img
               src={ProfilePicture}
               alt="Profile"
