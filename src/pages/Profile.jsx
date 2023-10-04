@@ -8,8 +8,6 @@ export default function Profile() {
   return (
     <Layout>
       <div className="container mt-4">
-
-
         {/* Add the profile picture */}
         <div className="container w-full p-4 bg-blue-gray-200 rounded-3xl flex-col justify-center items-center shadow-lg">
           <div className="">
@@ -23,7 +21,6 @@ export default function Profile() {
             <h1 className="text-3xl antialiased">Jackey</h1>
           </div>
         </div>
-
 
         {/* Add the stats section */}
         <div className="mt-4">
