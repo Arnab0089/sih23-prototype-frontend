@@ -2,22 +2,37 @@ import React from "react";
 import Layout from "../layouts/Layout";
 import StatsSection from "../components/Profile/StatsSection";
 import AchievementsSection from "../components/Profile/AchievementsSection";
+import ProfilePicture from "../assets/MetaMe_Smiling.png";
 
 export default function Profile() {
   return (
     <Layout>
-      <div className="container">
-        <h1>Profile</h1>
+      <div className="container mt-4">
+
+
         {/* Add the profile picture */}
-        <img
-          src="profile-picture-url.jpg"
-          alt="Profile"
-          className="profile-picture"
-        />
+        <div className="container w-full p-4 bg-blue-gray-200 rounded-3xl flex-col justify-center items-center shadow-lg">
+          <div className="">
+            <img
+              src={ProfilePicture}
+              alt="Profile"
+              className="rounded-full w-36 h-36 object-cover"
+            />
+          </div>
+          <div className="flex-col justify-between">
+            <h1 className="text-3xl antialiased">Jackey</h1>
+          </div>
+        </div>
+
+
         {/* Add the stats section */}
-        <StatsSection />
+        <div className="mt-4">
+          <StatsSection />
+        </div>
         {/* Add the achievements section */}
-        <AchievementsSection />
+        <div className="mt-4">
+          <AchievementsSection />
+        </div>
       </div>
     </Layout>
   );

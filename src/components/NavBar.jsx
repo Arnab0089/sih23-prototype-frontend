@@ -1,29 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AiFillHome } from "react-icons/ai";
-import { BiSolidMessageAdd } from "react-icons/bi";
-import { ImStatsDots } from "react-icons/im";
-import { FaHandsHoldingChild } from "react-icons/fa6";
-import { BiSolidUserCircle } from "react-icons/bi";
+import { GoHome } from "react-icons/go";
+import { BsPeople } from "react-icons/bs";
+import { HiOutlinePlusCircle } from "react-icons/hi2";
+import { AiOutlineNotification } from "react-icons/ai";
+import { BiUser } from "react-icons/bi";
 
 export default function NavBar() {
   return (
-    <div className=" fixed bottom-0 left-0 w-full py-2 px-4 bg-[#eeeded] z-50 ">
+    <div className=" fixed bottom-0 left-0 w-full py-3 px-4 bg-[#eeeded] z-50 ">
       <div className=" flex justify-between items-center ">
         <Link to="/">
-          <AiFillHome className="text-4xl" />
+          <GoHome className="text-3xl" />
         </Link>
         <Link to="/add">
-          <BiSolidMessageAdd className="text-4xl" />
+          <BsPeople className="text-3xl" />
         </Link>
         <Link to="/stats">
-          <ImStatsDots className="text-3xl" />
+          <HiOutlinePlusCircle className="text-3xl" />
         </Link>
         <Link to="/assistant">
-          <FaHandsHoldingChild className="text-4xl" />
+          <AiOutlineNotification className="text-3xl" />
         </Link>
         <Link to="/profile">
-          <BiSolidUserCircle className="text-4xl" />
+          <BiUser className="text-3xl" />
         </Link>
       </div>
     </div>
