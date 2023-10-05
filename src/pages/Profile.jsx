@@ -8,7 +8,7 @@ import AchievementsSection from "../components/Profile/AchievementsSection";
 export default function Profile() {
   return (
     <Layout>
-      <div className="container mx-auto mt-4 mb-[4rem]">
+      <div className="container mx-auto mb-[4rem]">
         {/* Add the profile picture */}
         <div className="mt-4">
           <SummarySection />

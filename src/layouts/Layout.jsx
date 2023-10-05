@@ -6,9 +6,9 @@ import Header from "../components/Header";
 
 export default function Layout({ children }) {
   const location = useLocation();
-  const { colors } = useSelector((state) => state.theme);
+  const { colors, theme } = useSelector((state) => state.theme);
   return (
-    <div className=" min-h-[130vh]" style={{ backgroundColor: colors.background }} >
+    <div className=" min-h-[130vh]" style={{ backgroundColor: theme == 'light' ? '#ffffff' : '#000000' }} >
       {location.pathname !== "/" && <Header />}
       <NavBar />
       <div className="">{children}</div>
