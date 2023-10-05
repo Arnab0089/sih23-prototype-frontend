@@ -55,10 +55,10 @@ const renderActiveShape = (props) => {
 export default function StatsSection() {
   // Define your data and options for the pie chart
   const data = [
-    { name: "Education", value: 30, fill: "#FF6384" },
-    { name: "Environment", value: 40, fill: "#36A2EB" },
-    { name: "Charity", value: 30, fill: "#FFCE56" },
-    { name: "Activity", value: 35, fill: "#8884d8" },
+    { name: "Recycling", value: 12, fill: "#36A2EB" },
+    { name: "Plantation", value: 27, fill: "#28B463" },
+    { name: "Charity/Activity", value: 5, fill: "#ED8325" },
+    { name: "Conservation", value: 19, fill: "#2565CF" }
   ];
 
   const { colors, theme } = useSelector((state) => state.theme);
@@ -89,9 +89,9 @@ export default function StatsSection() {
             data={data}
             cx="50%"
             cy="50%"
-            innerRadius={50}
-            outerRadius={80}
-            fill={colors.primary}
+            innerRadius={70}
+            outerRadius={100}
+            fill="#8884d8"
             dataKey="value"
             onMouseEnter={onPieEnter}
             theme={theme}
