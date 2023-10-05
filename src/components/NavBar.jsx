@@ -13,19 +13,19 @@ export default function NavBar() {
     <div className=" fixed bottom-0 left-0 w-full py-3 px-4  z-50 " style={{ backgroundColor: theme == 'light' ? '#ffffff' : '#000000' }}>
       <div className=" flex justify-between items-center ">
         <Link to="/">
-          <GoHome style={{ color: theme == 'dark' ? '#ffffff' : '#000000' }} className="text-3xl" />
+          <GoHome style={{ color: colors.text }} className="text-3xl" />
         </Link>
         <Link to="/add">
-          <BsPeople style={{ color: theme == 'dark' ? '#ffffff' : '#000000' }} className="text-3xl" />
+          <BsPeople style={{ color: colors.text }} className="text-3xl" />
         </Link>
         <Link to="/stats">
-          <HiOutlinePlusCircle style={{ color: theme == 'dark' ? '#ffffff' : '#000000' }} className="text-3xl" />
+          <HiOutlinePlusCircle style={{ color: colors.text }} className="text-3xl" />
         </Link>
         <Link to="/assistant">
-          <AiOutlineNotification style={{ color: theme == 'dark' ? '#ffffff' : '#000000' }} className="text-3xl" />
+          <AiOutlineNotification style={{ color: colors.text }} className="text-3xl" />
         </Link>
         <Link to="/profile">
-          <BiUser style={{ color: theme == 'dark' ? '#ffffff' : '#000000' }} className="text-3xl" />
+          <BiUser style={{ color: colors.text }} className="text-3xl" />
         </Link>
       </div>
     </div>

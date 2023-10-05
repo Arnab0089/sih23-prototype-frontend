@@ -11,7 +11,6 @@ export default function Header() {
   const dispatch = useDispatch();
 
   const { theme, colors } = useSelector((state) => state.theme);
-  console.log(theme);
 
   const genHeading = useCallback(() => {
     switch (location.pathname) {
@@ -37,7 +36,7 @@ export default function Header() {
           {genHeading()}
         </Typography>
         <div className="">
-          <IconButton variant="text" color="gray" ripple="light">
+          <IconButton variant="text" color="gray" >
             {theme === "light" ? (
               <BsMoon
                 className="text-xl"
@@ -50,7 +49,7 @@ export default function Header() {
               />
             )}
           </IconButton>
-          <IconButton variant="text" color="gray" ripple="light">
+          <IconButton variant="text" color="gray" >
             <BsThreeDotsVertical className="text-xl" style={{ color: colors.text }} />
           </IconButton>
         </div>
