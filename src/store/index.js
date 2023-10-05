@@ -4,17 +4,17 @@ const lightTheme = {
   primary: "#ffffff",
   secondary: "#03dac6",
   background: "#ffffff",
-  card: "#ffffff",
+  card: "#96B6C5",
   text: "#000000",
   border: "#000000",
   notification: "#6200ee",
 };
 
 const darkTheme = {
-  primary: "#00000015",
-  secondary: "#03dac6",
-  background: "#121212",
-  card: "#1e1e1e",
+  primary: "#000000d5",
+  secondary: "#b0bec5",
+  background: "#ffffff",
+  card: "#445069",
   text: "#ffffff",
   border: "#ffffff",
   notification: "#bb86fc",

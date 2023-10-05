@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <>
       <div className="py-3 px-3 flex justify-between items-center" style={{ backgroundColor: colors.primary }}>
-        <Typography className="text-left" variant="h5" color="gray">
+        <Typography style={{ color: colors.text }} className="text-left" variant="h5" color="gray">
           {genHeading()}
         </Typography>
         <div className="">
@@ -45,13 +45,13 @@ export default function Header() {
               />
             ) : (
               <BsSun
-                className="text-2xl"
+                className="text-2xl text-white"
                 onClick={() => dispatch(toggleTheme())}
               />
             )}
           </IconButton>
           <IconButton variant="text" color="gray" ripple="light">
-            <BsThreeDotsVertical className="text-xl" />
+            <BsThreeDotsVertical className="text-xl" style={{ color: colors.text }} />
           </IconButton>
         </div>
       </div>

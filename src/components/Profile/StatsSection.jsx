@@ -3,6 +3,7 @@ import { Chart, ArcElement } from "chart.js";
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
 Chart.register(ArcElement);
 import { GoArrowRight } from "react-icons/go";
+import { useSelector } from "react-redux";
 
 
 const renderActiveShape = (props) => {
@@ -43,7 +44,7 @@ const renderActiveShape = (props) => {
       />
       <path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none" />
       <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
-      <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} textAnchor={textAnchor} fill="#333">{`${(percent * 100).toFixed(2)}%`}</text>
+      <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} textAnchor={textAnchor} fill={fill}>{`${(percent * 100).toFixed(2)}%`}</text>
       {/* <text x={ex + (cos >= 0 ? 1 : -1) * 12} y={ey} dy={18} textAnchor={textAnchor} fill="#999">
         {`(Rate ${(percent * 100).toFixed(2)}%)`}
       </text> */}
@@ -60,6 +61,8 @@ export default function StatsSection() {
     { name: "Activity", value: 35, fill: "#8884d8" },
   ];
 
+  const { colors, theme } = useSelector((state) => state.theme);
+
   // const COLORS = ["#FF6384", "#36A2EB", "#FFCE56"];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -71,11 +74,11 @@ export default function StatsSection() {
   );
 
   return (
-    <div className="stats-section bg-gray-400 p-4 rounded-3xl shadow-md">
+    <div className="stats-section p-4 rounded-3xl shadow-md" style={{ backgroundColor: colors.card }}>
       <div className="flex justify-between">
-        <h2 className="text-xl font-semibold">Stats</h2>
+        <h2 className="text-xl font-semibold" style={{ color: colors.text }}>Stats</h2>
         <div className="more-icon">
-          <GoArrowRight className="text-2xl" />
+          <GoArrowRight style={{ color: colors.text }} className="text-2xl" />
         </div>
       </div>
       <div className="stat-diag flex justify-center items-center">
@@ -88,9 +91,10 @@ export default function StatsSection() {
             cy="50%"
             innerRadius={50}
             outerRadius={80}
-            fill="#8884d8"
+            fill={colors.primary}
             dataKey="value"
             onMouseEnter={onPieEnter}
+            theme={theme}
           />
         </PieChart>
       </div>

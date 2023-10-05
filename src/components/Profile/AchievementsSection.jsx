@@ -2,6 +2,7 @@ import React from "react";
 import PlantBadge from "../../assets/plant-clipart-sample140313a.png";
 import { GoArrowRight } from "react-icons/go";
 import { Typography } from "@material-tailwind/react";
+import { useSelector } from "react-redux";
 
 const achievementsData = [
   { id: 1, name: "Achievement 1" },
@@ -10,12 +11,14 @@ const achievementsData = [
 ];
 
 export default function AchievementsSection() {
+  const { colors, theme } = useSelector((state) => state.theme);
+
   return (
-    <div className="achievements-section bg-red-200 p-4 rounded-3xl shadow-md">
+    <div className="achievements-section  p-4 rounded-3xl shadow-md" style={{ backgroundColor: colors.card }}>
       <div className="flex justify-between">
-        <h2 className="text-xl font-semibold">Badges</h2>
+        <h2 className="text-xl font-semibold" style={{ color: colors.text }}>Badges</h2>
         <div className="more-icon">
-          <GoArrowRight className="text-2xl" />
+          <GoArrowRight style={{ color: colors.text }} className="text-2xl" />
         </div>
       </div>
       <div className="mt-4 flex justify-around">
