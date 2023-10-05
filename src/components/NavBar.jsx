@@ -1,29 +1,31 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { AiFillHome } from "react-icons/ai";
-import { BiSolidMessageAdd } from "react-icons/bi";
-import { ImStatsDots } from "react-icons/im";
-import { FaHandsHoldingChild } from "react-icons/fa6";
-import { BiSolidUserCircle } from "react-icons/bi";
+import { GoHome } from "react-icons/go";
+import { BsPeople } from "react-icons/bs";
+import { HiOutlinePlusCircle } from "react-icons/hi2";
+import { AiOutlineNotification } from "react-icons/ai";
+import { BiUser } from "react-icons/bi";
 
 export default function NavBar() {
+  const { colors, theme } = useSelector((state) => state.theme);
   return (
-    <div className=" fixed bottom-0 left-0 w-full py-2 px-4 bg-[#eeeded] z-50 ">
+    <div className=" fixed bottom-0 left-0 w-full py-3 px-4  z-50 " style={{ backgroundColor: theme == 'light' ? '#ffffff' : '#000000' }}>
       <div className=" flex justify-between items-center ">
         <Link to="/">
-          <AiFillHome className="text-4xl" />
+          <GoHome style={{ color: colors.text }} className="text-3xl" />
         </Link>
         <Link to="/add">
-          <BiSolidMessageAdd className="text-4xl" />
+          <BsPeople style={{ color: colors.text }} className="text-3xl" />
         </Link>
         <Link to="/stats">
-          <ImStatsDots className="text-3xl" />
+          <HiOutlinePlusCircle style={{ color: colors.text }} className="text-3xl" />
         </Link>
         <Link to="/assistant">
-          <FaHandsHoldingChild className="text-4xl" />
+          <AiOutlineNotification style={{ color: colors.text }} className="text-3xl" />
         </Link>
         <Link to="/profile">
-          <BiSolidUserCircle className="text-4xl" />
+          <BiUser style={{ color: colors.text }} className="text-3xl" />
         </Link>
       </div>
     </div>
