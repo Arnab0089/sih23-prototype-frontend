@@ -4,7 +4,7 @@ const lightTheme = {
   primary: "#ffffff",
   secondary: "#03dac6",
   background: "#ffffff",
-  card: "#96B6C5",
+  card: "#ADC4CE",
   text: "#000000",
   border: "#000000",
   notification: "#6200ee",
@@ -13,7 +13,7 @@ const lightTheme = {
 const darkTheme = {
   primary: "#000000d5",
   secondary: "#b0bec5",
-  background: "#ffffff",
+  background: "#EEEEEE",
   card: "#445069",
   text: "#ffffff",
   border: "#ffffff",
