@@ -10,7 +10,7 @@ import { BiUser } from "react-icons/bi";
 export default function NavBar() {
   const { colors, theme } = useSelector((state) => state.theme);
   return (
-    <div className=" fixed bottom-0 left-0 w-full py-3 px-4 bg-white z-50 " style={{ backgroundColor: theme == 'light' ? '#ffffff' : '#000000' }}>
+    <div className=" fixed bottom-0 left-0 w-full py-3 px-4  z-50 " style={{ backgroundColor: theme == 'light' ? '#ffffff' : '#000000' }}>
       <div className=" flex justify-between items-center ">
         <Link to="/">
           <GoHome style={{ color: theme == 'dark' ? '#ffffff' : '#000000' }} className="text-3xl" />

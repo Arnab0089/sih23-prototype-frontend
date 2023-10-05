@@ -1,7 +1,7 @@
 import React from "react";
 import PlantBadge from "../../assets/plant-clipart-sample140313a.png";
 import { GoArrowRight } from "react-icons/go";
-import { Typography } from "@material-tailwind/react";
+import { Typography, IconButton } from "@material-tailwind/react";
 import { useSelector } from "react-redux";
 
 const achievementsData = [
@@ -18,10 +18,12 @@ export default function AchievementsSection() {
       <div className="flex justify-between">
         <h2 className="text-xl font-semibold" style={{ color: colors.text }}>Badges</h2>
         <div className="more-icon">
-          <GoArrowRight style={{ color: colors.text }} className="text-2xl" />
+          <IconButton variant="text" >
+            <GoArrowRight style={{ color: colors.text }} className="text-2xl" />
+          </IconButton>
         </div>
       </div>
-      <div className="mt-4 flex justify-around">
+      <div className="my-4 flex justify-around">
         {achievementsData.map((achievement) => (
           <div
             key={achievement.id}

@@ -4,7 +4,7 @@ import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
 Chart.register(ArcElement);
 import { GoArrowRight } from "react-icons/go";
 import { useSelector } from "react-redux";
-
+import { IconButton } from "@material-tailwind/react";
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
@@ -78,7 +78,9 @@ export default function StatsSection() {
       <div className="flex justify-between">
         <h2 className="text-xl font-semibold" style={{ color: colors.text }}>Stats</h2>
         <div className="more-icon">
-          <GoArrowRight style={{ color: colors.text }} className="text-2xl" />
+          <IconButton variant="text" >
+            <GoArrowRight style={{ color: colors.text }} className="text-2xl" />
+          </IconButton>
         </div>
       </div>
       <div className="stat-diag flex justify-center items-center">
