@@ -19,7 +19,7 @@ export default function Navigation() {
           <Navlink icon={faLocationDot} label="Detection" url="/detection" />
         </li>
         <li className="">
-          <Navlink icon={faPlus} label="New" url="/new" size="3xl" />
+          <Navlink icon={faPlus} label="New" url="/new" />
         </li>
         <li className="">
           <Navlink icon={faEnvelope} label="Community" url="/community" />
