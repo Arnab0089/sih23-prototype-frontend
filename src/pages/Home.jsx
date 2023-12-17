@@ -1,6 +1,6 @@
 import Layout from '../layouts/Layout';
 import Trending from '../components/Trending/Trending.jsx';
-import Welcome from '../components/Welcome/welcome.jsx';
+import Welcome from '../components/Welcome/Welcome.jsx';
 import SearchBar from '../components/Searchbar/SearchBar.jsx';
 
 
