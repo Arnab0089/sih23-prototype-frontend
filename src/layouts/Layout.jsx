@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <div className=" flex flex-col items-center justify-between h-screen min-h-screen">
       <Header />
-      <main className="overflow-y-auto w-full">{children}</main>
+      <main className="overflow-y-auto w-full h-full">{children}</main>
       <Navigation />
     </div>
   );
