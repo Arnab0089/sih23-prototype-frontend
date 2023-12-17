@@ -1,6 +1,7 @@
 <div align="center">
-<h1>Paper Spay</h1>
-<p> An application for women safety. That can predict dengarous location and guide women bad situation.</p>
+<img src="https://github.com/iamBijoyKar/sih23-prototype-frontend/assets/85790967/2f4ea817-06bd-421c-a04a-65717ac8b23c" alt="Papper Spray Logo" />
+<h1>Papper Spray</h1>
+<p> An application for women safety. That can predict dengarous location and guide women in bad situations.</p>
 </div>
 
 ## Starting guide for the project 🚀
