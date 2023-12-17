@@ -2,7 +2,7 @@ import Layout from '../layouts/Layout';
 import Trending from '../components/Trending/Trending.jsx';
 import Welcome from '../components/Welcome/Welcome.jsx';
 import SearchBar from '../components/Searchbar/SearchBar.jsx';
-
+import MapComponent from '../components/Map/Mapcomponent.jsx';
 
 // home page component
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
 
 	return (
 		<Layout>
-			<h1>Home</h1>
 			{/* Write your code here */}
 			<SearchBar />
 			<Welcome />
+			<MapComponent />
 			<Trending posts={trendingPosts} />
 		</Layout>
 	);
