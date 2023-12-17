@@ -4,6 +4,10 @@
 <p> An application for women safety. That can predict dangerous location and guide women in bad situations.</p>
 </div>
 
+### Production Build 👉 https://sih23-prototype-frontend.vercel.app/
+
+### Development Build 👉 https://sih23-prototype-frontend-git-main-iambijoykar.vercel.app/
+
 ## Starting guide for the project 🚀
 
 ### 1. Clone the repository to your local machine using the following command:
