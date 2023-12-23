@@ -1,5 +1,10 @@
 import { useState } from 'react';
-import { FaRegComment, FaRegCaretSquareUp, FaRegHeart, FaShareAlt } from "react-icons/fa";
+import {
+  FaRegComment,
+  FaRegCaretSquareUp,
+  FaRegHeart,
+  FaShareAlt,
+} from 'react-icons/fa';
 
 // trending community post component for home page
 export default function Trending({ posts }) {
@@ -51,18 +56,18 @@ export default function Trending({ posts }) {
                   <div className="post-footer flex flex-row justify-between">
                     <span className="post-stats flex flex-row justify-between">
                       {post.comments}
-                      <FaRegComment className="text-gray-800 m-1"/>
+                      <FaRegComment className="text-gray-800 m-1" />
                     </span>
                     <span className="post-stats flex flex-row justify-between">
                       {post.retweets}
-                      <FaRegCaretSquareUp className="text-gray-800 m-1"/>
+                      <FaRegCaretSquareUp className="text-gray-800 m-1" />
                     </span>
                     <span className="post-stats flex flex-row justify-between">
                       {post.likes}
-                      <FaRegHeart className="text-gray-800 m-1"/>
+                      <FaRegHeart className="text-gray-800 m-1" />
                     </span>
                     <span className="post-stats flex flex-row justify-between">
-                      <FaShareAlt className="text-gray-800 m-1"/>
+                      <FaShareAlt className="text-gray-800 m-1" />
                     </span>
                   </div>
                 </div>

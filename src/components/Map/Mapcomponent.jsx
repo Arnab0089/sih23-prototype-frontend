@@ -34,7 +34,7 @@ const MapComponent = () => {
           },
           (error) => {
             console.error('Error getting the user location:', error);
-          }
+          },
         );
       } else {
         console.error('Geolocation is not supported by this browser.');
@@ -54,7 +54,13 @@ const MapComponent = () => {
     }
   }, []);
 
-  return <div id="map" style={{ width: '100%', height: '300px' }} className="my-5 "></div>;
+  return (
+    <div
+      id="map"
+      style={{ width: '100%', height: '300px' }}
+      className="my-5 "
+    ></div>
+  );
 };
 
 export default MapComponent;

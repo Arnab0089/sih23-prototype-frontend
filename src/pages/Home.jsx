@@ -1,4 +1,5 @@
 import Layout from '../layouts/Layout';
+import Header from '../components/Header/Header.jsx';
 import Trending from '../components/Trending/Trending.jsx';
 import Welcome from '../components/Welcome/Welcome.jsx';
 import SearchBar from '../components/Searchbar/SearchBar.jsx';
@@ -132,6 +133,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Write your code here */}
+      <Header headerText="PepperSpray" />
       <SearchBar />
       <Welcome />
       <MapComponent />

@@ -29,16 +29,20 @@ npm run dev
 ```
 
 ### 4. Make your changes and commit them using the following commands:
+
 ```
 git add .
 git commit -m "your message"
 ```
 
 ### 6. Format your code using the following command:
+
 ```
 npm run format
 ```
+
 ### 7. Push your changes to the repository using the following command:
+
 ```
 git push origin main
 ```

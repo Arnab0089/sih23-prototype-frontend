@@ -1,12 +1,20 @@
 import { useState } from 'react';
-import { FaPepperHot, FaMapMarkerAlt, FaCalendarCheck, FaExclamationTriangle, FaCheckCircle, FaEdit } from "react-icons/fa";
+import {
+  FaPepperHot,
+  FaMapMarkerAlt,
+  FaCalendarCheck,
+  FaExclamationTriangle,
+  FaCheckCircle,
+  FaEdit,
+} from 'react-icons/fa';
 
 const ProfileAbout = ({ user }) => {
   return (
     <div className="flex flex-col justify-center items-center p-4">
       <div className="relative">
         <img
-          src={user.profilePicture} alt="ProfilePicture"
+          src={user.profilePicture}
+          alt="ProfilePicture"
           className="rounded-full h-32 w-32 object-contain border-4 border-[91A8D0] shadow-xl"
         />
         <div className="absolute bottom-0 right-0 shadow-md rounded-full">
@@ -28,8 +36,10 @@ const ProfileAbout = ({ user }) => {
           <p className="text-gray-500 mx-1">{user.location}.</p>
         </div>
         <div className="text-[#91A8D0] font-semibold flex flex-row items-center mx-4">
-          <FaCalendarCheck  />
-          <p className="text-gray-500 mx-1">Joined {user.joinedMonth}, {user.joinedYear}.</p>
+          <FaCalendarCheck />
+          <p className="text-gray-500 mx-1">
+            Joined {user.joinedMonth}, {user.joinedYear}.
+          </p>
         </div>
         {user.verified && (
           <div className="text-[#91A8D0] font-semibold flex flex-row items-center mx-4">
