@@ -8,7 +8,7 @@ import {
   FaEdit,
 } from 'react-icons/fa';
 
-const ProfileAbout = ({ user }) => {
+export default function ProfileAbout({ user }) {
   return (
     <div className="flex flex-col justify-center items-center p-4">
       <div className="relative">
@@ -58,6 +58,4 @@ const ProfileAbout = ({ user }) => {
       <hr className="border-gray-400 my-2 w-full" />
     </div>
   );
-};
-
-export default ProfileAbout;
+}
