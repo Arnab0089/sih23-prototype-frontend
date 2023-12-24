@@ -1,9 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+module.exports = {
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "foreground-element": "var(--foreground-element)",
+        "foreground-element-2": "var(--foreground-element-2)",
+        "primary-text": "var(--primary-text)",
+        "secondary-text": "var(--secondary-text)",
+        "special-text": "var(--special-text)",
+      },
+    },
   },
   plugins: [],
 };
