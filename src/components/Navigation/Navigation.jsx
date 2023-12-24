@@ -1,13 +1,11 @@
-// import {
-//   faHouse,
-//   faLocationDot,
-//   faPlus,
-//   faEnvelope,
-//   faCircleUser,
-// } from '@fortawesome/free-solid-svg-icons';
 import {
-
-} from "react-icons/pi";
+  faHouse,
+  faLocationDot,
+  faPlus,
+  faEnvelope,
+  faCircleUser,
+} from '@fortawesome/free-solid-svg-icons';
+// import {} from 'react-icons/pi';
 import Navlink from './Navlink';
 
 // app navigation component for all pages
