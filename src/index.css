@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-    --foreground-element: rgba(145, 168, 208, 1);
-    --foreground-element-2: rgba(247, 202, 201, 1);
-    --primary-text: rgba(30, 30, 30, 1);
-    --secondary-text: rgba(209, 209, 209, 1);
-    --special-text: rgba(180, 47, 47, 1);
+  --foreground-element: rgba(145, 168, 208, 1);
+  --foreground-element-2: rgba(247, 202, 201, 1);
+  --primary-text: rgba(30, 30, 30, 1);
+  --secondary-text: rgba(209, 209, 209, 1);
+  --special-text: rgba(180, 47, 47, 1);
 }
