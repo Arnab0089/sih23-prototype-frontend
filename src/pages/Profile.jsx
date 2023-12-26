@@ -25,7 +25,6 @@ export default function Profile() {
       <AchievementBadges />
       <MyPost />
 
-
       {/* Write your code here */}
     </Layout>
   );
