@@ -1,11 +1,10 @@
 import {
-  faHouse,
-  faLocationDot,
-  faPlus,
-  faEnvelope,
-  faCircleUser,
-} from '@fortawesome/free-solid-svg-icons';
-// import {} from 'react-icons/pi';
+  PiHouse,
+  PiCompass,
+  PiPlusSquare,
+  PiEnvelopeOpen,
+  PiUser,
+} from 'react-icons/pi';
 import Navlink from './Navlink';
 
 // app navigation component for all pages
@@ -14,19 +13,19 @@ export default function Navigation() {
     <nav className="w-full px-4 py-4 pb-2">
       <ul className="flex items-baseline justify-between">
         <li className="">
-          <Navlink icon={faHouse} label="Home" url="/" />
+          <Navlink icon={PiHouse} label="Home" url="/" />
         </li>
         <li className="">
-          <Navlink icon={faLocationDot} label="Detection" url="/detection" />
+          <Navlink icon={PiCompass} label="Detection" url="/detection" />
         </li>
         <li className="">
-          <Navlink icon={faPlus} label="New" url="/new" />
+          <Navlink icon={PiPlusSquare} label="New" url="/new" />
         </li>
         <li className="">
-          <Navlink icon={faEnvelope} label="Community" url="/community" />
+          <Navlink icon={PiEnvelopeOpen} label="Community" url="/community" />
         </li>
         <li className="">
-          <Navlink icon={faCircleUser} label="Profile" url="/profile" />
+          <Navlink icon={PiUser} label="Profile" url="/profile" />
         </li>
       </ul>
     </nav>
