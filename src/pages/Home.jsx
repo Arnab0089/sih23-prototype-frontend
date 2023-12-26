@@ -136,7 +136,8 @@ export default function Home() {
       <Header headerText="PepperSpray" />
       <SearchBar />
       <Welcome />
-      <MapComponent />
+      <MapComponent className="w-full h-[300px]" styles={{ width: '100%' }} />
+      {/*height & width are must for map whether in styles or className*/}
       <Trending posts={trendingPosts} />
     </Layout>
   );

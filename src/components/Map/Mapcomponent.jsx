@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { MarkerClusterer } from '@googlemaps/markerclusterer';
+import PropTypes from 'prop-types';
 
 const locations = [
   ['Park Street', 22.5526, 88.3521],
@@ -19,7 +20,15 @@ const locations = [
   ['Ballygunge', 23.5176, 88.1519],
 ];
 
-const MapComponent = () => {
+MapComponent.propTypes = {
+  className: PropTypes.string,
+  styles: PropTypes.object,
+};
+
+export default function MapComponent({
+  className = 'w-full h-[300px] aspect-auto ',
+  styles,
+}) {
   const mapRef = useRef(null);
   useEffect(() => {
     const loadMap = async () => {
@@ -113,14 +122,5 @@ const MapComponent = () => {
     }
   }, []);
 
-  return (
-    <div
-      id="map"
-      ref={mapRef}
-      style={{ width: '100%', height: '300px' }}
-      className="my-5"
-    ></div>
-  );
-};
-
-export default MapComponent;
+  return <div id="map" ref={mapRef} style={styles} className={className}></div>;
+}
