@@ -1,6 +1,7 @@
 import Layout from '../layouts/Layout';
 import Header from '../components/Header/Header.jsx';
 import ProfileAbout from '../components/ProfileAbout/ProfileAbout.jsx';
+import { AchievementBadges } from '../components/Badges/Achievement-Badges.jsx';
 
 // user profile page component
 export default function Profile() {
@@ -22,6 +23,7 @@ export default function Profile() {
       <Header headerText="Profile" />
       <ProfileAbout user={userProfile} />
       <h1>Profile</h1>
+      <AchievementBadges />
       {/* Write your code here */}
     </Layout>
   );
