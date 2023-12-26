@@ -7,7 +7,7 @@ import { AchievementBadges } from '../components/Badges/Achievement-Badges.jsx';
 export default function Profile() {
   const userProfile = {
     profilePicture:
-      'https://media.vogue.co.uk/photos/64fed45cc5bc8fbcaf973bfa/2:3/w_2560%2Cc_limit/news1109_GettyImages-1500117177.jpg',
+      'https://i.pinimg.com/originals/24/ca/51/24ca51edd82d5828340f6a87edbbb529.jpg',
     userName: 'Zendaya',
     userId: 'zendaya10',
     userBio:
@@ -22,8 +22,10 @@ export default function Profile() {
     <Layout>
       <Header headerText="Profile" />
       <ProfileAbout user={userProfile} />
-      <h1>Profile</h1>
       <AchievementBadges />
+      <MyPost />
+
+
       {/* Write your code here */}
     </Layout>
   );
