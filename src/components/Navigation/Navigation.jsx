@@ -10,22 +10,32 @@ import Navlink from './Navlink';
 // app navigation component for all pages
 export default function Navigation() {
   return (
-    <nav className="w-full px-4 py-4 pb-2">
+    <nav className="w-full px-4 pt-3 pb-2">
       <ul className="flex items-baseline justify-between">
         <li className="">
-          <Navlink icon={PiHouse} label="Home" url="/" />
+          <Navlink size="3xl" Icon={PiHouse} label="Home" url="/" />
         </li>
         <li className="">
-          <Navlink icon={PiCompass} label="Detection" url="/detection" />
+          <Navlink
+            size="3xl"
+            Icon={PiCompass}
+            label="Detection"
+            url="/detection"
+          />
         </li>
         <li className="">
-          <Navlink icon={PiPlusSquare} label="New" url="/new" />
+          <Navlink size="3xl" Icon={PiPlusSquare} label="New" url="/new" />
         </li>
         <li className="">
-          <Navlink icon={PiEnvelopeOpen} label="Community" url="/community" />
+          <Navlink
+            size="3xl"
+            Icon={PiEnvelopeOpen}
+            label="Community"
+            url="/community"
+          />
         </li>
         <li className="">
-          <Navlink icon={PiUser} label="Profile" url="/profile" />
+          <Navlink size="3xl" Icon={PiUser} label="Profile" url="/profile" />
         </li>
       </ul>
     </nav>
