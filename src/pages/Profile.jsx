@@ -1,12 +1,13 @@
 import Layout from '../layouts/Layout';
 import Header from '../components/Header/Header.jsx';
 import ProfileAbout from '../components/ProfileAbout/ProfileAbout.jsx';
+import MyPost from '../components/MyPosts/MyPost.jsx';
 
 // user profile page component
 export default function Profile() {
   const userProfile = {
     profilePicture:
-      'https://media.vogue.co.uk/photos/64fed45cc5bc8fbcaf973bfa/2:3/w_2560%2Cc_limit/news1109_GettyImages-1500117177.jpg',
+      'https://i.pinimg.com/originals/24/ca/51/24ca51edd82d5828340f6a87edbbb529.jpg',
     userName: 'Zendaya',
     userId: 'zendaya10',
     userBio:
@@ -21,6 +22,7 @@ export default function Profile() {
     <Layout>
       <Header headerText="Profile" />
       <ProfileAbout user={userProfile} />
+      <MyPost />
       <h1>Profile</h1>
       {/* Write your code here */}
     </Layout>
