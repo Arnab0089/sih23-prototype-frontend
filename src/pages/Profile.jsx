@@ -2,6 +2,8 @@ import Layout from '../layouts/Layout';
 import Header from '../components/Header/Header.jsx';
 import ProfileAbout from '../components/ProfileAbout/ProfileAbout.jsx';
 import { AchievementBadges } from '../components/Badges/Achievement-Badges.jsx';
+import  MyPost  from '../components/MyPosts/MyPost.jsx';
+
 
 // user profile page component
 export default function Profile() {
@@ -24,6 +26,7 @@ export default function Profile() {
       <ProfileAbout user={userProfile} />
       <AchievementBadges />
       <MyPost />
+
 
       {/* Write your code here */}
     </Layout>
