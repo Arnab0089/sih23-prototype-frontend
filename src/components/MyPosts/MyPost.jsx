@@ -9,6 +9,7 @@ import {
 const MyPost = () => {
   const userCommonData = {
     id: 1,
+    name: 'Zendaya',
     username: '@zendaya10',
     profilePicture:
       'https://i.pinimg.com/originals/24/ca/51/24ca51edd82d5828340f6a87edbbb529.jpg',
@@ -53,6 +54,9 @@ const MyPost = () => {
                   <div className="ml-1 mr-2 w-full">
                     <div className="post-header flex flex-row font-bold">
                       <span className="post-author">
+                        {userCommonData.name}
+                      </span>
+                      <span className="post-username mx-1 text-gray-600">
                         {userCommonData.username}
                       </span>
                       <span className="post-time ml-auto text-gray-500">
