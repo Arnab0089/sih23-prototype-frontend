@@ -6,6 +6,9 @@ Navlink.propTypes = {
   label: PropTypes.string.isRequired, //? label for the icon eg. Home, Detection, New, Community, Profile
   url: PropTypes.string.isRequired, //? url for the icon eg. /, /detection, /new, /community, /profile
   size: PropTypes.string, //? size of the icon [not for now]
+  iconStyles: PropTypes.object, //? styles for the icon
+  iconClassName: PropTypes.string, //? className for the icon
+  textStyles: PropTypes.object, //? styles for the text
   badgeCount: PropTypes.number, //? number of notification [not for now]
 };
 
@@ -15,7 +18,9 @@ export default function Navlink({
   Icon,
   label,
   url,
-  size = '2xl',
+  iconClassName,
+  iconStyles,
+  textStyles,
   badgeCount,
 }) {
   const location = useLocation().pathname;
@@ -28,12 +33,15 @@ export default function Navlink({
       >
         {Icon && (
           <Icon
-            className={`text-${size} ${
+            className={`text-2xl ${
               location === url ? 'scale-110' : 'scale-100'
-            }`}
+            } ${iconClassName}`}
+            styles={iconStyles}
           />
         )}
-        <span className="">{label}</span>
+        <span className="" style={textStyles}>
+          {label}
+        </span>
       </span>
     </NavLink>
   );
