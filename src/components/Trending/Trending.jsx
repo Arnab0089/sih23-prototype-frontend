@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// import { Post } from "../Post/Post";
 import {
   FaRegComment,
   FaRegCaretSquareUp,
@@ -15,7 +16,7 @@ export default function Trending({ posts }) {
   };
 
   return (
-    <div className="trending-component flex flex-col bg-pink-200 w-screen h-auto items-center justify-center max-w-[384px] mx-auto my-10 rounded-md">
+    <div className="trending-component flex flex-col bg-foreground-element-2 p-2 rounded-lg">
       <div className="flex flex-row items-center justify-between w-full p-1">
         <h2 className="font-semibold">Trending Community Posts</h2>
         {!showAllPosts && (

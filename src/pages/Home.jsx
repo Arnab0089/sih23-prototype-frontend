@@ -133,12 +133,17 @@ export default function Home() {
   return (
     <Layout>
       {/* Write your code here */}
-      <Header headerText="PepperSpray" />
-      <SearchBar />
-      <Welcome />
-      <MapComponent className="w-full h-[300px]" styles={{ width: '100%' }} />
-      {/*height & width are must for map whether in styles or className*/}
-      <Trending posts={trendingPosts} />
+      <Header headerText="Home" />
+      <div className="flex flex-col gap items-center gap-5 p-3">
+        <SearchBar />
+        <Welcome />
+        <MapComponent
+          className="w-full h-[300px] rounded-lg"
+          styles={{ width: '100%' }}
+        />
+        {/*height & width are must for map whether in styles or className*/}
+        <Trending posts={trendingPosts} />
+      </div>
     </Layout>
   );
 }
