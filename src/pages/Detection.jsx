@@ -8,7 +8,7 @@ export default function Detection() {
     <Layout>
       <Header headerText="Detection" />
       {/* Write your code here */}
-      <MapComponent className="w-full h-[300px]" styles={{ width: '100%' }} />
+      <MapComponent className="w-full h-[86vh]" styles={{ width: '100%' }} />
     </Layout>
   );
 }

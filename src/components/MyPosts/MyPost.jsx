@@ -53,9 +53,7 @@ const MyPost = () => {
 
                   <div className="ml-1 mr-2 w-full">
                     <div className="post-header flex flex-row font-bold">
-                      <span className="post-author">
-                        {userCommonData.name}
-                      </span>
+                      <span className="post-author">{userCommonData.name}</span>
                       <span className="post-username mx-1 text-gray-600">
                         {userCommonData.username}
                       </span>

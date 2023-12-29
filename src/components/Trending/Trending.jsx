@@ -32,6 +32,9 @@ export default function Trending({ posts }) {
         <ul className="trending-list flex flex-col gap-2">
           {displayedPosts.map((post) => (
             <li key={post.id} className="trending-item py-5">
+
+              {/* <Post className="" post={post} /> */}
+
               <div className="flex flex-row">
                 <img
                   src={post.profilePicture}
