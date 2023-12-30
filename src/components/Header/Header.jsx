@@ -1,5 +1,5 @@
 import React from 'react';
-import { PiBellDuotone } from 'react-icons/pi';
+import { PiGearDuotone } from 'react-icons/pi';
 import PropTypes from 'prop-types';
 
 Header.propTypes = {
@@ -13,7 +13,7 @@ export default function Header({ headerText }) {
       <div className="relative w-fit [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-special-text text-[24px] tracking-[0] leading-[27px] whitespace-nowrap">
         {headerText}
       </div>
-      <PiBellDuotone className="w-8 h-8" />
+      <PiGearDuotone className="w-8 h-8" />
     </header>
   );
 }

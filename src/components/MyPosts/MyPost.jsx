@@ -34,12 +34,12 @@ const MyPost = () => {
   ];
 
   return (
-    <>
-      <h2 className="text-lg mx-4 my-2 text-primary-text font-bold">
+    <div className='w-screen px-4'>
+      <h2 className="text-lg my-2 text-primary-text font-bold">
         My Posts
       </h2>
 
-      <div className="trending-component flex flex-col w-screen h-auto items-center justify-center max-w-[384px] mx-auto mb-10 rounded-md">
+      <div className="my-post-component flex flex-col h-auto items-center justify-center max-w-[384px] mx-auto mb-10 rounded-md">
         <div className="flex flex-row">
           <ul className="trending-list flex flex-col gap-2">
             {posts.map((post, index) => (
@@ -90,7 +90,7 @@ const MyPost = () => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

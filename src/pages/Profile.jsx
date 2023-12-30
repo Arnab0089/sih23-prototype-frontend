@@ -1,7 +1,7 @@
 import Layout from '../layouts/Layout';
 import Header from '../components/Header/Header.jsx';
 import ProfileAbout from '../components/ProfileAbout/ProfileAbout.jsx';
-import { AchievementBadges } from '../components/Badges/Achievement-Badges.jsx';
+import { AchievementBadges } from '../components/Badges/AchievementBadges.jsx';
 import MyPost from '../components/MyPosts/MyPost.jsx';
 
 // user profile page component

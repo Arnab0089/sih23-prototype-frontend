@@ -3,7 +3,7 @@ import Header from '../components/Header/Header.jsx';
 import Trending from '../components/Trending/Trending.jsx';
 import Welcome from '../components/Welcome/Welcome.jsx';
 import SearchBar from '../components/Searchbar/SearchBar.jsx';
-import MapComponent from '../components/Map/Mapcomponent.jsx';
+import MapComponent from '../components/Map/Map.jsx';
 
 // home page component
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
       author: 'Geetanjali',
       username: 'geetanjali26',
       comments: '46',
-      retweets: '18',
-      likes: '363',
+      downvotes: '18',
+      upvotes: '363',
       time: '3h',
       title: 'More power to all women!',
     },
@@ -27,8 +27,8 @@ export default function Home() {
       author: 'Ranvijay',
       username: 'ranvijay27',
       comments: '47',
-      retweets: '19',
-      likes: '364',
+      downvotes: '19',
+      upvotes: '364',
       time: '4h',
       title: 'Sunai de raha hain, behra nahi hu main!',
     },
@@ -39,12 +39,25 @@ export default function Home() {
       author: 'Balbir',
       username: 'balbir28',
       comments: '48',
-      retweets: '20',
-      likes: '365',
+      downvotes: '20',
+      upvotes: '365',
       time: '5h',
       title: 'Papa papa papa!',
     },
   ];
+
+  const post = {
+    id: 1,
+    profilePicture:
+      'https://getapic.com/pfp',
+    author: 'Geetanjali',
+    username: 'geetanjali26',
+    comments: '46',
+    downvotes: '18',
+    upvotes: '363',
+    time: '3h',
+    title: 'More power to all women!',
+  };
 
   return (
     <Layout>
