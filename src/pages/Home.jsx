@@ -11,8 +11,8 @@ export default function Home() {
     {
       id: 1,
       profilePicture:
-        'https://w7.pngwing.com/pngs/981/645/png-transparent-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette-symbol-thumbnail.png',
-      author: 'Geetanjali',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5S5928kiNaJ0bM5keDodBrk2p2Ce22HkGQ&usqp=CAU',
+      user: 'Geetanjali',
       username: 'geetanjali26',
       comments: '46',
       downvotes: '18',
@@ -23,8 +23,8 @@ export default function Home() {
     {
       id: 2,
       profilePicture:
-        'https://w7.pngwing.com/pngs/981/645/png-transparent-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette-symbol-thumbnail.png',
-      author: 'Ranvijay',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStavLoSzNk309zTkctHbJDSru4jGw_gkQ3zg&usqp=CAU',
+      user: 'Ranvijay',
       username: 'ranvijay27',
       comments: '47',
       downvotes: '19',
@@ -35,8 +35,8 @@ export default function Home() {
     {
       id: 3,
       profilePicture:
-        'https://w7.pngwing.com/pngs/981/645/png-transparent-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette-symbol-thumbnail.png',
-      author: 'Balbir',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE3a1kkTDVkwrUAWbiDxVNh-p9UPoZWzcqng&usqp=CAU',
+      user: 'Balbir',
       username: 'balbir28',
       comments: '48',
       downvotes: '20',
@@ -45,19 +45,6 @@ export default function Home() {
       title: 'Papa papa papa!',
     },
   ];
-
-  const post = {
-    id: 1,
-    profilePicture:
-      'https://getapic.com/pfp',
-    author: 'Geetanjali',
-    username: 'geetanjali26',
-    comments: '46',
-    downvotes: '18',
-    upvotes: '363',
-    time: '3h',
-    title: 'More power to all women!',
-  };
 
   return (
     <Layout>

@@ -8,8 +8,8 @@ export default function Community() {
   const post = {
     id: 1,
     profilePicture:
-      'https://getapic.com/pfp',
-    author: 'Geetanjali',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5S5928kiNaJ0bM5keDodBrk2p2Ce22HkGQ&usqp=CAU',
+    user: 'Geetanjali',
     username: 'geetanjali26',
     comments: '46',
     downvotes: '18',

@@ -14,35 +14,35 @@ export function AchievementBadges() {
           className="flex flex-col items-center justify-around text-center bg-[#ffd0d0] rounded-md p-4"
           style={{ minWidth: '150px' }}
         >
-          <p>Safety Advocate </p>
+          <p className="font-semibold">Safety Advocate </p>
           <img src={Bronze} className="w-100%" />
         </div>
         <div
           className="flex flex-col items-center justify-around text-center bg-[#ffd0d0] rounded-md p-4"
           style={{ minWidth: '150px' }}
         >
-          <p>Bug Buster </p>
+          <p className="font-semibold">Bug Buster </p>
           <img src={Gold} className="w-100%" />
         </div>
         <div
           className="flex flex-col items-center justify-around text-center bg-[#ffd0d0] rounded-md p-4"
           style={{ minWidth: '150px' }}
         >
-          <p>Consistent Connector</p>
+          <p className="font-semibold">Consistent Connector</p>
           <img src={Silver} className="w-100%" />
         </div>
         <div
           className="flex flex-col items-center justify-around text-center bg-[#ffd0d0] rounded-md p-4"
           style={{ minWidth: '150px' }}
         >
-          <p>Spread the Safety </p>
+          <p className="font-semibold">Spread the Safety </p>
           <img src={Gold} className="w-100%" />
         </div>
         <div
           className="flex flex-col items-center justify-around text-center bg-[#ffd0d0] rounded-md p-4"
           style={{ minWidth: '150px' }}
         >
-          <p>Verified Pepper </p>
+          <p className="font-semibold">Verified Pepper </p>
           <img src={Bronze} className="w-100%" />
         </div>
       </div>
