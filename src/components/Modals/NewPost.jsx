@@ -79,7 +79,7 @@ export default function NewPostModal({
             <li className="">
               <button type="button" className="flex items-center gap-1">
                 <PiUserFocus className="w-6 h-6" />
-                <span className="text-special-text text-lg ">Gallary</span>
+                <span className="text-special-text text-lg ">Gallery</span>
               </button>
             </li>
             <li className="">
