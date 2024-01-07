@@ -24,7 +24,10 @@ export default function Post({ post }) {
             posted
           </p>
         </div>
-        <PiShareNetwork className="!relative !w-[25px] !h-[25px] justify-self-end" />
+        <div className="flex g items-center">
+          <PiClock className="!relative !w-[15px] !h-[15px] justify-self-end" />
+          {post.time}
+        </div>
       </div>
       <p className="font-normal text-primary-text text-lg">{post.title}</p>
 
@@ -42,10 +45,9 @@ export default function Post({ post }) {
             <PiChatTeardropDots className="!relative !w-[25px] !h-[25px]" />
             <p>{post.comments}</p>
           </div>
-        </div>
-        <div className="flex items-center rounded-full border-2 p-1 gap-0.5">
-          <PiClock className="!relative !w-[25px] !h-[25px]" />
-          <p>{post.time}</p>
+          <div className="flex items-center rounded-full border-2 p-1 gap-0.5">
+            <PiShareNetwork className="!relative !w-[25px] !h-[25px]" />
+          </div>
         </div>
       </div>
     </div>

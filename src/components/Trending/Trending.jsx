@@ -18,7 +18,9 @@ export default function Trending({ posts }) {
   return (
     <div className="trending-component w-full flex flex-col rounded-lg gap-2">
       <div className="flex flex-row items-center justify-between w-full">
-        <h2 className="font-semibold">Trending Community Posts</h2>
+        <h2 className="text-lg text-primary-text font-bold">
+          Trending Community Posts
+        </h2>
         {!showAllPosts && (
           <p
             className="font-bold rounded text-red-700 cursor-pointer"
